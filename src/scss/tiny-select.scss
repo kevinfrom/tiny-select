@@ -1,0 +1,90 @@
+// Variables
+$custom-select-border-color: #dee2e7;
+$custom-select-background-color: #fff;
+$custom-select-background-color-dropdown: #f7f7f7;
+$custom-select-background-color-disabled: darken($custom-select-background-color, 10%);
+
+.tiny-select {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: $custom-select-background-color;
+    border: 1px solid $custom-select-border-color;
+    color: #697382;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &.disabled {
+        background: $custom-select-background-color-disabled;
+
+        span {
+            background: $custom-select-background-color-disabled;
+
+            &::after {
+                background: $custom-select-background-color-disabled;
+            }
+        }
+    }
+
+    &.open {
+        ul {
+            display: block;
+        }
+
+        span {
+            &::after {
+                content: '\f106';
+            }
+        }
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        width: calc(100% + 2px);
+        padding: 0;
+        border: 1px solid $custom-select-border-color;
+        background: $custom-select-background-color;
+        z-index: 1000;
+        list-style: none;
+        box-shadow: 0 5px 5px 5px rgba(255, 255, 255, 0.15);
+
+        li {
+            border-bottom: 1px solid $custom-select-border-color;
+            padding: 6px 12px;
+            background: $custom-select-background-color-dropdown;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 6px 12px;
+
+        &::after {
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            box-sizing: border-box;
+            text-align: center;
+            content: '\f107';
+            font-family: 'Font Awesome 5 Pro';
+            border: 1px solid $custom-select-border-color;
+            background: $custom-select-background-color;
+            z-index: 1;
+        }
+    }
+}
