@@ -1,6 +1,6 @@
 /**
  * tiny-select.js
- * @author Kevin From <https://github.com/kevinfrom>
+ * @author Kevin From <https://kevinfrom.dk>
  */
 
 (function ($) {
@@ -149,7 +149,5 @@
         } else {
             $.error('Method ' + methodOrOptions + ' does not exist on jQuery.tinySelect');
         }
-
-        return this;
     }
 })(jQuery);

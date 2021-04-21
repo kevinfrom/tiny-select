@@ -1,0 +1,40 @@
+{
+  "name": "tiny-select",
+  "version": "1.0.0",
+  "description": "A lightweight custom select that you can style how you like.",
+  "main": "src/js/tiny-select.js",
+  "scripts": {
+    "gulp": "gulp",
+    "gulp:watch": "gulp watch",
+    "gulp:build": "gulp build",
+    "gulp:compile": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinfrom/tiny-select.git"
+  },
+  "keywords": [
+    "custom",
+    "select",
+    "javascript",
+    "jquery",
+    "tiny",
+    "lightweight"
+  ],
+  "author": "Kevin From <https://kevinfrom.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinfrom/tiny-select/issues"
+  },
+  "homepage": "https://github.com/kevinfrom/tiny-select#readme",
+  "devDependencies": {
+    "fs2": "^0.3.9",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1"
+  },
+  "dependencies": {}
+}

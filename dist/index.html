@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiny-select.js @ kevinfrom.dk</title>
+    <link rel="stylesheet" href="tiny-select.css">
+</head>
+<body>
+    <h1>tiny-select.js</h1>
+
+    <p>Try selecting a value below :)</p>
+
+    <select id="my-select">
+        <option>- Please select a size -</option>
+        <option value="S">small</option>
+        <option value="M">medium</option>
+        <option value="L">large</option>
+        <option value="XL">x-large</option>
+    </select>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="tiny-select.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#my-select').tinySelect();
+            $('#my-select').change(function () {
+                alert($(this).val());
+            });
+        });
+    </script>
+</body>
+</html>
